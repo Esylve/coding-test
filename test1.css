@@ -1,7 +1,47 @@
-.body{
-    background-color: pink;
+body{
+	background-color: #F9F9F9;
+	font-family: Proxima Nova, sans-serif;
   }
-  
+
   .sectcards{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+	background-color:#FFFFFF;
+	padding:10px;
+	margin-bottom: 30px;
+	 
+}
+
+.level1{
+	display:flex;
+	justify-content: space-between;
+}
+
+h1{
+	font-weight: bold;
+	color:#500000;
+	margin-bottom:4vw;
+	font-size:4vw;
+}
+h4{
+	font-weight: bold;
+	color:#500000;
+	font-size:1.5vw;
+}
+img{
+	float: left;
+	margin-right: 10px;
+}
+a{
+	text-decoration: none;
+}
+button{
+	background-color:white;
+	color:#500000;
+	border: 2px solid #500000;
+	font-size: .8em;
+	width:100%;
+}
+p{
+	color:#363636;
+	font-size:.8em;
+}

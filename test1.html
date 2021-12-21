@@ -3,42 +3,52 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Meta tags for SEO -->
     <meta name="description" content="Record of your giving at the Texas A&M Association of Former Students">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Erin Sylve">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!--CSS Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="test1.css">
-    <title>Your Giving</title>
+    <link href="test1.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.typekit.net/cce4fas.css">
+<title>Your Giving</title>
   </head>
   <body>
     <div class="container">
         <h1>Your Giving</h1>
+		<!---Current Giving Block-->
         <h4>CURRENT GIVING</h4>
-      <div class="row">
-            <div class="sectcards col-6 row">
-                <div class="col-8">
-                    <h4>MEMBERSHIP LEVEL</h4>
-                    <img src="" alt="century club badge"/>
-                    <p>Diamond Century Club</p>
-                </div>
-                <div class="col-4">
-                    <h4>EXPIRES</h4>
-                    <p>Oct 20, 2021</p>
-                </div>
+		<!-- Using bootstrap grid system here. Could be accomplished with td and tr and a lot more work-->
+      <div class="row level1">
+            <div class="sectcards col-6" style="width:45%">
+				<div class="row">
+					<div class="col-8">
+						<h4>MEMBERSHIP LEVEL</h4>
+						<img style="height:30px;" src="centuryclubbadge-gold.svg" alt="century club badge"/>
+						<p>Diamond Century Club</p>
+					</div>	
+					<div class="col-4">
+						<h4>EXPIRES</h4>
+						<p>Oct 20, 2021</p>
+					</div>
+				</div>
             </div>
-            <div class="sectcards col-6 row">
-                <div class="col-8">
-                    <h4>TOTAL GIVEN</h4>
-                    <p>88,8888,888.88</p>
-                </div>
-                <div class="col-4">
-                    <h4>TOTAL YEARS</h4>
-                    <p>88</p>
-                </div>
+            <div class="sectcards col-6" style="width:45%">
+				<div class="row">
+					<div class="col-8">
+						<h4>TOTAL GIVEN</h4>
+						<p>$88,8888,888.88</p>
+					</div>
+					<div class="col-4">
+						<h4>TOTAL YEARS</h4>
+						<p>88</p>
+					</div>
+				</div>
             </div>
         </div>
+		<!---Open Pledges Block-->
         <h4>OPEN PLEDGES</h4>
         <div class="row sectcards">
             <div class="col">
@@ -62,6 +72,7 @@
                 <a href="#"><button>MAKE A PAYMENT</button></a>
             </div>
         </div>
+		<!---Recurring Gifts Block-->
         <h4>RECURRING GIFTS</h4>
         <div class="row sectcards">
             <div class="col">
@@ -74,21 +85,22 @@
             </div>
             <div class="col">
                 <h4>CARD</h4>
-                <img src="" alt="visa logo"><p>4242</p>
+                <img src="visa.svg" style="height:20px;" alt="visa logo"><p>4242</p>
             </div>
             <div class="col-4">
                 <h4>NEXT PAYMENT</h4>
                 <p>Dec 08,2020</p>
             </div>
-            <div class="col">
+            <div class="col-2">
                 <h4></h4>
-                <a style="color:red;" href="#"><p>CANCEL GIFT</p></a>
+                <p><a style="color:red;" href="#">CANCEL GIFT</a></p>
             </div>
             <div class="col-2">
                 <h4></h4>
                 <a href="#"><button>MANAGE GIFT</button></a>
             </div>
         </div>
+		<!---Gift Matching Block-->
         <h4>GIFT MATCHING</h4>
         <div class="row sectcards">
             <div class="col-4">
@@ -104,31 +116,49 @@
                 <p>Awaiting employer response</p>
             </div>
         </div>
+		<!---Giving History Block-->
         <h4>GIVING HISTORY<span style="color:grey;">(88 Years In the Century Club)</span></h4>
         <div class="row sectcards">
-            <div class="col-2">
+            <div class="diamond col-2">
                 <div><h4>2020 DIAMOND MEMBER</h4></div>
             </div>
-            <p><a href="#">TAX RECEIPT</a>  $1,532.88</p>
-            <hr>
-            <div class="col-2">
+			<div class="col"></div>
+			<div class="col-3">
+            	<p><a href="#">TAX RECEIPT</a>   $1,532.88</p>
+			</div>
+				<hr>
+            <div class="col-3">
                 <p><em>2016 - 2019 No Gift Given</em></p>
             </div>
-            <a href="#"><button>MAKE A PAYMENT</button></a>
-            <hr>
-            <div class="col-2">
+			<div class="col"></div>
+			<div class="col-2">
+            	<a href="#"><button>MAKE A PAYMENT</button></a>
+			</div>
+			<div class="col-1"></div>
+				<hr>
+            <div class="gold col-2">
                 <div><h4>2015 GOLD MEMBER</h4></div>
             </div>
-            <p><a href="#">TAX RECEIPT</a>  $642.27</p>
-            <hr>
+			<div class="col"></div>
+			<div class="col-3">
+            	<p><a href="#">TAX RECEIPT</a>   $642.27</p>
+            </div>
+			<hr>
             <div class="col-2">
                 <h4>2014</h4>
             </div>
-            <p><span style="color:green;">UPGRADE TO CENTURY CLUB</span><a href="#">TAX RECEIPT</a>  $47.00</p></p>
+			<div class="col"></div>
+			<div class="col-3">
+			<p style="color:green; text-align:right;">UPGRADE TO CENTURY CLUB</p>
+			</div>
+			<div class="col-3">
+            	<p><a href="#">TAX RECEIPT</a>  $47.00</p></p>
+			</div>
             <br>
         </div>
-        <h4><em>Gifts made prior to 1993 may not display</em></h4>
+        <h4 style="color:grey; text-align:right;"><em>Gifts made prior to 1993 may not display</em></h4>
         <br>
+	  <!---Transactions Block-->
         <h4>TRANSACTIONS</h4>
         <div class="row sectcards">
             <div class="col-3">
@@ -137,10 +167,10 @@
             <div class="col-2">
                 <h4>RECEIPT #</h4>
             </div>
-            <div class="col-2">
+            <div class="col-3">
                 <h4>ALLOCATION</h4>
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <h4>LEGAL AMT.</h4>
             </div>
             <div class="col-2">
@@ -153,10 +183,10 @@
             <div class="col-2">
                 <p>0008888888</p>
             </div>
-            <div class="col-2">
+            <div class="col-3">
                 <p>Annual Fund-Unrestricted</p>
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <p>$88.88</p>
             </div>
             <div class="col-2">
@@ -169,26 +199,27 @@
             <div class="col-2">
                 <p>0008888888</p>
             </div>
-            <div class="col-2">
+            <div class="col-3">
                 <p>Annual Fund-Unrestricted</p>
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <p>$88.88</p>
             </div>
             <div class="col-2">
                 <p>$88.88</p>
             </div>
         </div>
-        <h4><em>If different amounts are shown in legal and credit, it is due to joint giving</em></h4>
+        <h4 style="color:grey; text-align:right;"><em>If different amounts are shown in legal and credit, it is due to joint giving</em></h4>
         <br>
+	  <!---Contact Us Block-->
         <h4>CONTACT US</h4>
+	  <!--Additionally linked the phone because it's user friendly:)-->
         <p>Have questions related to decals, year bars, plaques or tax letters? Please contact Gift Recognition
-             at <a href="mailto:GiftRecognition@AggieNetwork.com"></a>GiftRecognition@AggieNetwork.com or <a href="tel:9798457514">(979) 845-7514</a>.
+             at <a href="mailto:GiftRecognition@AggieNetwork.com">GiftRecognition@AggieNetwork.com</a> or <a href="tel:9798457514">(979) 845-7514</a>.
         </p>
-        <p>For all other questions related to your giving account please contact <a href="Fundraising@AggieNetwork.com">Fundraising@AggieNetwork.com</a> or <a href="tel:9798457514">(979) 845-7514</a>.</p>
+        <p>For all other questions related to your giving account please contact <a href="mailto:Fundraising@AggieNetwork.com">Fundraising@AggieNetwork.com</a> or <a href="tel:9798457514">(979) 845-7514</a>.</p>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     </div>
   </body>
 </html>
-<link rel="stylesheet" href="https://use.typekit.net/cce4fas.css">
